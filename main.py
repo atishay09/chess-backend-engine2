@@ -13,7 +13,7 @@ class Data(BaseModel):
 
 dir = os.getcwd()
 print(dir)
-engine = chess.engine.SimpleEngine.popen_uci("stockfish")
+engine = chess.engine.SimpleEngine.popen_uci("/app/stockfish_15_linux_x64/stockfish")
 
 while not board.is_game_over():
     board.push_san(input("\nEnter your move : \n"))
