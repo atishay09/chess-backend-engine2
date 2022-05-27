@@ -15,16 +15,6 @@ dir = os.getcwd()
 print(dir)
 engine = chess.engine.SimpleEngine.popen_uci(r"\app\stockfish_15_linux_x64\stockfish")
 
-while not board.is_game_over():
-    board.push_san(input("\nEnter your move : \n"))
-    print(board)
-    print("\n\n\nBot : \n")
-    result = engine.play(board, chess.engine.Limit(time=0.1))
-    board.push(result.move)
-    print(board)
-if board.is_game_over():
-    print("Game Over")
-
 
 @app.post("/bot/")
 def hello(data : Data):
