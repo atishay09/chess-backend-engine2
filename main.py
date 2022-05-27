@@ -15,7 +15,7 @@ class Data(BaseModel):
 
 
 
-engine = chess.engine.SimpleEngine.popen_uci(r"I:\Everything\Internship\Impactional Games\stockfish_15_win_x64_avx2\stockfish.exe")
+engine = chess.engine.SimpleEngine.popen_uci(r"/home/ubuntu/chess-backend-engine/stockfish_15_linux_x64/stockfish")
 
 
 @app.post("/bot/")
