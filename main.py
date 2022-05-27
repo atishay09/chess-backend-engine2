@@ -13,7 +13,7 @@ class Data(BaseModel):
 
 dir = os.getcwd()
 print(dir)
-engine = chess.engine.SimpleEngine.popen_uci(r"\app\stockfish_15_linux_x64\stockfish")
+engine = chess.engine.SimpleEngine.popen_uci(r"/app/stockfish_15_linux_x64/stockfish")
 
 
 @app.post("/bot/")
