@@ -19,7 +19,7 @@ if __name__ == '__main__':
     dir = os.getcwd()
     print(dir)
 
-engine = chess.engine.SimpleEngine.popen_uci(r"/home/ubuntu/chess-backend-engine2/stockfish_15_linux_x64/stockfish")
+engine = chess.engine.SimpleEngine.popen_uci(r"/home/ubuntu/chess-backend-engine1/stockfish_15_linux_x64/stockfish")
 
 
 @app.post("/bot/")
