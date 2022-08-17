@@ -26,6 +26,10 @@ if __name__ == '__main__':
 # engine = chess.engine.SimpleEngine.popen_uci(r"/home/ubuntu/chess-backend-engine/stockfish_15_linux_x64/stockfish")
 
 
+if __name__ == '__main__':
+    dir = os.getcwd()
+    print(dir)
+
 
 
 @app.post("/bot/")
