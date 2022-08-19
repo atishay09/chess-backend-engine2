@@ -28,7 +28,7 @@ mysql-connector-python==8.0.28
 pycodestyle==2.9.0
 pydantic==1.9.1
 python-dotenv==0.20.0
-pywin32==304
+
 PyYAML==6.0
 requests==2.27.1
 simplejson==3.17.6
@@ -43,3 +43,4 @@ watchfiles==0.16.1
 wcwidth==0.2.5
 websockets==10.3
 yapf==0.32.0
+pywin32==304
