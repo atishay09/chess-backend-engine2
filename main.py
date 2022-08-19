@@ -34,14 +34,7 @@ if __name__ == '__main__':
 
 @app.post("/bot/")
 def hello(data : Data):
-    print(data)
-
-    if sys.platform == "linux":
-        os.chmod("./stockfish_20011801_x64", stat.S_IXUSR | stat.S_IXGRP | stat.S_IXOTH)
-        engine = chess.engine.SimpleEngine.popen_uci("./stockfish_15_linux_x64/stockfish")
-    else:
-        engine = chess.engine.SimpleEngine.popen_uci("./stockfish_15_win_x64_avx2/stockfish_15_x64_avx2.exe")
-
+    engine = chess.engine.SimpleEngine.popen_uci(r"/home/ubuntu/chess-backend-engine/stockfish_15_linux_x64/stockfish")
     try:
         board = chess.Board(data.fen)
     except Exception as e:
