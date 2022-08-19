@@ -30,7 +30,7 @@ print(dir)
 
 @app.post("/bot/")
 def hello(data : Data):
-    engine = chess.engine.SimpleEngine.popen_uci("./stockfish_15_win_x64_avx2/stockfish_15_x64_avx2.exe")
+    engine = chess.engine.SimpleEngine.popen_uci(r"/home/ubuntu/chess-engine-backend/stockfish_15_linux_x64/stockfish")
     try:
         board = chess.Board(data.fen)
     except Exception as e:
